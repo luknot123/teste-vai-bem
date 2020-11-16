@@ -1,0 +1,41 @@
+<div class="home">
+ 
+  <div class="">
+
+    <div class="row">
+      <div class="col-md-offset-4 col-md-4 col-lg-4 box-login">
+        <div class="row">
+          <h4 class="center titulo-login">Gerenciador</h4>
+          <form class="col s12" id="formLogin" #form="ngForm"  data-toggle="validator" role="form">
+            <p class="login-desc text-center">Gerencie os seus estabelecimentos</p>
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="user" type="text" [(ngModel)]="usuario.email" name="email" class="validate" required>
+                <label for="user">Email</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="password" type="password" [(ngModel)]="usuario.password" name="password" class="validate" required>
+                <label for="password">Senha</label>
+              </div>
+            </div>
+            <button [ngClass]="{'disabled': !usuario.user || !usuario.password}" type="submit" class="btn btn-block height-3-5" (click)="fazerLogin()">Acessar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bkg" style="background: linear-gradient(rgb(110 159 211 / 80%) 30%, rgb(67 155 141)),url(./assets/assets/img/bkg.jpg)">
+  </div>
+
+  <ngx-spinner
+    bdColor="rgba(51,51,51,0.8)"
+    size="large"
+    color="#fff"
+    type="timer"
+    loadingText="{{mensagemLoading}}"
+  ></ngx-spinner>
+
+</div>
+

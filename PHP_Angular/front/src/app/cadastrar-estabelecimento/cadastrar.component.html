@@ -1,0 +1,58 @@
+<menu class="menu-default"></menu>
+<div class="main-panel">
+    <div class="content">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+              <div class="card">
+                  <div class="card-header bkg-padrao-1 padding-top-2">
+                      <h4 class="title">Cadastrar estabelecimento</h4>
+                      <p class="category">Insira as informacoes dos estabelecimento</p>
+                  </div>
+                  <div class="card-content padding-top-3">
+                    <form class="col s12" data-toggle="validator" role="form" id="formPericia">
+                      <div class="row">
+                        <div class="input-field col m12 s12 align-data">
+                          <input type="text" class="validate" [(ngModel)]="negocio.nome" name="nome" maxlength="150" required>
+                          <label for="nome">Nome do estabelecimento <span class="obrig">*</span></label>
+                        </div>
+                        <div class="input-field col m12 s12 align-data">
+                          <input type="text" class="validate" [(ngModel)]="negocio.descricao" name="descricao" maxlength="150" required>
+                          <label for="nome">Descrição <span class="obrig">*</span></label>
+                        </div>
+                        <div class="input-field col m12 s12 align-data">
+                          <input type="text" class="validate" [(ngModel)]="negocio.endereco" name="endereco" maxlength="150" required>
+                          <label for="endereco">Endereço <span class="obrig">*</span></label>
+                        </div>
+                        <div class="input-field col m12 s12 align-data">
+                          <input type="text" class="validate" [(ngModel)]="negocio.bairro" name="bairro" maxlength="150" required>
+                          <label for="bairro">Bairro <span class="obrig">*</span></label>
+                        </div>
+                        <div class="input-field col m12 s12 align-data">
+                          <input type="text" class="validate" [(ngModel)]="negocio.cidade" name="cidade" maxlength="150" required>
+                          <label for="cidade">Cidade <span class="obrig">*</span></label>
+                        </div>
+                        <div class="input-field col m12 s12 align-data">
+                          <input type="text" class="validate" [(ngModel)]="negocio.telefone" name="telefone" maxlength="150" required>
+                          <label for="telefone">Telefone <span class="obrig">*</span></label>
+                        </div>
+                      </div>
+                      
+                      <div class="row">
+                        <div class="col-sm-12 col-md-offset-6 col-md-6 text-right">
+                          <div class="col-md-6 text-right">
+                            <!-- <button [routerLink]="['/pericias']" class="btn btn-default btn-block" >Voltar</button> -->
+                          </div>
+                          <div class="col-md-6 text-right">
+                            <button type="button" class="btn waves-effect waves-light btn-secondary btn-block" (click)="cadastrar()">Cadastrar</button>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+              </div>
+            </div>
+          </div>
+		     </div>
+			</div>
+</div>

@@ -1,0 +1,44 @@
+version: '3.5'
+
+services:
+  partograma-app:
+    build:
+      context: '.'
+      args:
+        uid: ${UID}
+    container_name: partograma-app
+    ports:
+      - 8000:8000
+    environment:
+      - APACHE_RUN_USER=#1000
+      - APACHE_RUN_GROUP=#1000
+    volumes:
+      - .:/var/www/html
+    networks:
+      - network-partograma
+
+  postgres-partograma-db:
+    image: postgres:9.6
+    container_name: postgres-partograma-db
+    ports:
+      - 5444:5432
+    environment:
+      - POSTGRES_DB=${DB_DATABASE}
+      - POSTGRES_USER=${DB_USERNAME}
+      - POSTGRES_PASSWORD=${DB_PASSWORD}
+      - TZ=America/Fortaleza
+    networks:
+      - network-partograma
+
+#volumes:
+#  vl-postgres-db:
+#    driver: local
+#    driver_opts:
+#      type: 'none'
+#      o: 'bind'
+#      device: 'C:\Users\clail\OneDrive\Documentos\Besalt\bd_docker\postgres\partograma'
+
+
+networks:
+  network-partograma:
+    driver: bridge

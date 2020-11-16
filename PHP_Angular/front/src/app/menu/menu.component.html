@@ -1,0 +1,123 @@
+<div class="sidebar" data-color="green" data-image="assets/assets/img/sidebar-1.jpg">
+<div class="logo">
+  <a [routerLink]="['/home']" class="brand-logo">
+    <!-- <img src="assets/assets/img/prefeitura2.png" class="img-responsive"/> -->
+  </a>
+  <h5 class="center">Gerenciador</h5>
+</div>
+  <div class="sidebar-wrapper menu-dashboard">
+        <ul id="nav-mobile" class="nav nav-dashboard">
+          <li class="perfil">
+            <a class="text-center">
+              <p><strong>Bem vindo(a),</strong><br><br>{{user.name}}</p>
+            </a>
+          </li>
+          <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+            <a [routerLink]="['/painel']">
+                <i class="fas fa-border-all"></i>
+                <p>Buscar</p>
+            </a>
+          </li>
+          <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+              <a [routerLink]="['/cadastrar']">
+                  <i class="fas fa-list-alt"></i>
+                  <p>Cadastrar</p>
+              </a>
+          </li>
+          <li>
+              <a href="#" (click)="logout()">
+                  <i class="material-icons">power_settings_new</i>
+                  <p>Sair</p>
+              </a>
+          </li>
+        </ul>
+ 
+  </div>
+</div>
+
+<nav class="navbar navbar-absolute navbar-sistema" id="menu-header">
+  <div class="container-fluid">
+  <div class="nav-wrapper">
+    <ul id="slide-out" class="side-nav">
+      <li class="perfil">
+        <a class="text-center">
+          <p><strong>Bem vindo(a),</strong></p>
+          <h6>{{user.nome}}</h6>
+        </a>
+      </li>
+      <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+        <a [routerLink]="['/painel']">
+            <i class="fas fa-border-all"></i>
+            <p>Painel</p>
+        </a>
+      </li>
+      <li *ngIf="user.servidor_efetivo" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+        <a [routerLink]="['/pericias']">
+            <i class="fas fa-list-alt"></i>
+            <p>Minhas Perícias</p>
+        </a>
+      </li>
+    <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+      <a [routerLink]="['/carteira']">
+          <i class="far fa-id-card"></i>
+          <p>Carteira Digital</p>
+      </a>
+    </li>
+    <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}" id="btn-menu-prest">
+      <a [routerLink]="['/prestadores']">
+          <i class="fas fa-stethoscope"></i>
+          <p>Prestadores</p>
+      </a>
+    </li>
+    <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+      <a [routerLink]="['/despesas']">
+          <i class="fas fa-file-invoice-dollar"></i>
+          <p>Despesas Médicas</p>
+      </a>
+    </li>
+    <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+      <a [routerLink]="['/prevfor']">
+          <i class="fas fa-file-invoice-dollar"></i>
+          <p>PREVFOR</p>
+      </a>
+    </li>
+    <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+      <a href="https://telemed-ipm.maida.health/auth" target="_blank">
+          <i class="fas fa-laptop-medical"></i>
+          <p>Telemed</p>
+      </a>
+    </li>
+    <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+      <a [routerLink]="['/numeros']">
+          <i class="fas fa-sort-numeric-up-alt"></i>
+          <p>Números IPM</p>
+      </a>
+    </li>
+    
+    <li>
+        <a href="#" (click)="logout()">
+            <i class="material-icons">power_settings_new</i>
+            <p>Sair</p>
+        </a>
+    </li>
+
+
+    </ul>
+    
+    <button type="button" class="navbar-toggle" data-activates="slide-out"><i class="material-icons">menu</i></button>
+    <h5 class="titulo-mobile"><strong>IPM</strong> DIGITAL</h5>
+
+  </div>
+  </div>
+</nav>
+
+
+
+
+<ngx-spinner
+  bdColor="rgba(51,51,51,0.8)"
+  size="large"
+  color="#fff"
+  type="timer"
+  loadingText="{{msgLoading}}"
+></ngx-spinner>

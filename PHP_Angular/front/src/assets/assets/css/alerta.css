@@ -1,0 +1,70 @@
+div.alerta{
+  position: fixed;
+  top: 1em;
+  width: 100%;
+  text-align: center;
+  z-index: 2000;
+}
+div.alerta>.sucesso{
+  background: #4caf50;
+  color: #fff;
+  font-size: 1.2em;
+}
+div.alerta>.erro{
+  background: #dd2929;
+  color: #fff;
+  font-size: 1.2em;
+}
+div.alerta>.aviso{
+  background: #00cae3;
+  color: #fff;
+  font-size: 1.2em;
+}
+
+div.alerta>.attr{
+  width: 35em;
+  position: relative;
+  display: inline-block;
+  text-align: left;
+  padding: 1em;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+div.alerta>.attr>button.close{
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 1.5em;
+}
+div.alerta>.attr>button[data-dismiss="alert"]:focus{background:transparent;}
+
+div.openAlerta{
+  animation-name: openAlerta;
+  animation-duration: .5s;
+  -webkit-animation-fill-mode: forwards;
+}
+div.closeAlerta{
+  animation-name: closeAlerta;
+  animation-duration: .5s;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes openAlerta {
+    from {
+      transform: translateY(-7em);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0em);
+      opacity: 1;
+    }
+}
+@keyframes closeAlerta {
+    from {
+      transform: translateY(0em);
+      opacity: 1;
+    }
+    to {
+      transform: translateY(-7em);
+      opacity: 0;
+    }
+}

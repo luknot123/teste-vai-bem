@@ -1,0 +1,82 @@
+.label-fixed{
+  position: relative;
+  display: block;
+  height: auto;
+  left: 0 !important;
+}
+.align-data{
+  margin-top: 2.7em;
+}
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  padding-top: .5em;
+  width: 100%;
+}
+.alert{
+  font-size: 17px;
+}
+.btn-upload {
+  transition: all .3s;
+  border: 2px solid #64a9a4;
+  color: #37474f;
+  background-color: #ffffff;
+  padding: 8px 20px;
+  border-radius: 3px;
+  font-size: 17px;
+  font-weight: bold;
+  width: 100%;
+}
+.btn-upload:hover{
+  border: 2px solid #37474f;
+  color: #fff;
+  background-color: #64a9a4;
+  cursor: pointer;
+}
+.upload-btn-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  cursor: pointer;
+  z-index: -1;
+}
+.obrig{
+  color: red;
+}
+.btn-aviso{
+  font-size: 12px;
+  color: #ff1300;
+  font-weight: normal;
+  display: block;
+  line-height: initial;
+  margin-top: 3px;
+}
+#aviso-modal{
+  display: inline-table !important;
+  top: -20% !important;
+
+}
+#aviso-modal p{
+  font-size: 1.5em;
+  line-height: normal;
+  font-weight: 300;
+}
+#aviso-modal a{
+  font-weight: bold;
+  font-size: 1.3em;
+}
+#aviso-modal a:hover{
+  color: #64a9a4;
+}
+.btn-back,.btn-back:hover,.btn-back:active{
+  background: transparent;
+  color: #000;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+  font-size: 1.2em;
+  text-transform: initial;
+}

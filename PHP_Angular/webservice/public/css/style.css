@@ -1,0 +1,117 @@
+.login-box input{
+    margin-bottom: 1em;
+}
+#alert{
+    /* margin: 1em; */
+}
+.margin-right-1{
+    margin-right: 1.1em !important;
+}
+body .navbar-red{
+    /* background-color: red; */
+    background-image: linear-gradient(to bottom,#ad3020 0,#ad3020 100%) !important;
+    border: none;
+    border-radius: 0;
+}
+body .navbar-red .navbar-nav>li>a{
+    color: #fff;
+}
+[disabled]{
+    filter: grayscale(1) !important;
+    opacity: .3 !important; 
+}
+.image-responsive{
+    width: 100%;
+}
+.esqueci-senha{
+    color: #ad3020;
+    text-decoration: underline;
+    font-size: 1.3em;
+}
+.margin-top-3{
+    margin-top: 3em;
+}
+.nav-active a{
+    color: #de4532 !important;
+    font-weight: 500;
+    border-bottom: 3px solid;
+}
+.logo-nav{
+    width: 15em;
+}
+.navbar-log .navbar-right{
+    padding-top: 2.5em;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.open>a{
+    background: transparent !important;
+    box-shadow: none !important;
+}
+.info-position-nav{
+    position: absolute;
+    right: 1em;
+}
+.table{
+    width: 100% !important;
+}
+button{
+    outline: none !important;
+}
+.margin-bottom-3{
+    margin-bottom: 3em;
+}
+.toggle{
+    margin: .5em;
+    margin-bottom: .5em !important;
+    transform: scale(.87);
+}
+.avaliacao-box{
+    font-size: 1.2em;
+}
+.avaliacao-box label.radio-inline{
+    vertical-align: inherit;
+    padding-right: 1em;
+}
+.avaliacao-box label.radio-inline input{
+    transform: scale(1.3);
+}
+.margin-top-1{
+    margin-top: 1em;
+}
+.input-hide{
+    visibility: hidden;
+    position: absolute;
+    z-index: -1;
+}
+.margin-top-2{
+    margin-top: 2em;
+}
+.input-show{
+    visibility: visible;
+    position: relative;
+    z-index: auto;
+}
+.dataTables_wrapper .dataTables_filter input{
+    padding-left: .3em;
+}
+.modal-block{
+    margin: 0 auto !important;
+    width: 95% !important;
+    margin-top: 1em !important;
+}
+.data-ate{
+    text-align: center;
+    padding-top: .5em;
+    font-weight: bold;
+}
+.form-relatorio label{
+    padding-left: 0px !important;
+}
+.table-relatorio>thead>tr>th{
+    color: #fff;
+}
+.table-relatorio>thead>tr[role="row"]>th{
+    color: #000;
+    padding-left: .5em;
+    font-size: 1.1em;
+} 
+

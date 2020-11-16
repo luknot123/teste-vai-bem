@@ -1,0 +1,495 @@
+[modal]{
+  max-height: 70%;
+  width: 50%;
+}
+div.logo a img{
+  width: 17em;
+  margin: 0 auto;
+  padding: 1em;
+}
+div.check-desafio button{
+  width: 6em;
+  height: 6em;
+  margin-top: 5em;
+  margin-right: 2em;
+  margin-left: 2em;
+}
+div.check-desafio{
+  text-align: center;
+  margin-top: 2em;
+  padding-bottom: 3em;
+}
+div.check-desafio p{
+  font-size: 1.5em;
+  padding-top: .5em;
+}
+div.check-desafio span{
+  font-size: 1.3em;
+}
+div.check-desafio span.pontos i{
+  color: #e0da12;
+  font-size: 1.5em;
+  position: relative;
+  top: .15em;
+}
+
+div.check-desafio button i{
+  font-size: 3em;
+  padding-top: .2em;
+}
+.navbar-sistema{
+  position: relative;
+  margin: 0;
+  height: 1em;
+  display: block;
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  padding: 0px;
+}
+.navbar-sistema .navbar-toggle{
+  padding: 0;
+  margin: 0;
+  position: relative;
+  margin: auto;
+  float: initial;
+}
+.navbar-sistema .navbar-toggle i{
+  font-size: 35px;
+}
+.sidebar{
+  box-shadow: none !important;
+}
+div.menu-dashboard{
+  height: auto;
+  overflow: hidden;
+}
+div.badges img{
+  width: auto;
+  margin: 0 auto;
+}
+.gamification table.desafios tr td{
+  font-size: 1.1em;
+  font-weight: 300;
+  font-family: sans-serif;
+}
+.gamification table.desafios tr{
+  transition: background .5s;
+  background: #fff;
+}
+.gamification table.desafios tr:hover{
+  background: #ddd;
+  cursor: pointer;
+}
+.gamification table.desafios tr:nth-child(2n+1) i{
+  color: red;
+  animation-name: pulse;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+}
+.gamification table.desafios tr:nth-child(2n) i{
+  color: red;
+  animation-name: pulse;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+}
+@keyframes pulse {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.1);
+    }
+}
+.navbar-sistema ul li a{
+  color: #646262;
+}
+.navbar-sistema .dropdown-menu{
+  position: absolute;
+  left: -7em;
+}
+.navbar-sistema .dropdown-menu li{
+  width: 100%;
+}
+.navbar-sistema .dropdown-menu li a:hover{
+  background: #018c84;
+  color: #fff;
+}
+.badge-nvl-1 .progress{
+  background-color: #fff;
+  border: 1px solid #000;
+}
+/* #slide-out{
+  transition: all .3s;
+  transform: translateX(130rem);
+} */
+.progress span{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+  font-size: 14px;
+}
+.gamification a{
+  color: #000;
+  font-weight: 500;
+  font-size: 13px;
+}
+.badge-nvl-1 .determinate{
+  transition: all .5s;
+  width: 0%;
+  background-color: #a0ddf3;
+}
+.gamification{
+  margin-top: -7px;
+  padding: 1em;
+  padding-top: 0;
+}
+.gamification .progress{
+  padding:10px;
+}
+.card-perfil{
+  padding: 1em;
+  padding-top: 4em;
+  padding-bottom: 0;
+}
+.nav-dashboard li.active a{
+  animation-name: activeMenu;
+  animation-duration: .5s;
+  animation-fill-mode: forwards;
+  background-color: #64a9a4;
+}
+@keyframes activeMenu {
+    0%   {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.03);
+    }
+}
+[padding-top-07]{
+  padding-top: .7em;
+}
+button.btn-desafio:hover{
+ animation-name: animaBtnCheck;
+ animation-duration: .5s;
+ animation-iteration-count: 1;
+ animation-direction: alternate;
+}
+@keyframes animaBtnCheck {
+    0% {
+      transform: scale(1) rotate(0deg);
+    }
+    50% {
+      transform: scale(1.2) rotate(-60deg);
+    }
+    100% {
+      transform: scale(1) rotate(0deg);
+    }
+}
+[padding-0]{
+  padding: 0em;
+}
+.linha-badges{
+  width: 100%;
+  /* overflow-x: auto; */
+  filter: grayscale(100%);
+  opacity: 0.4;
+  padding-bottom: 1em;
+  padding-top:1em;
+  overflow-x: auto;
+  /* margin: 0 auto; */
+}
+.linha-badges .badge-vm{
+  display: table-cell;
+  padding-right: 1em;
+  text-align: center;
+  padding: .3em;
+}
+.linha-badges .badge-vm span{
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  color: #000;
+}
+.linha-badges .badge-vm img{
+  width: 4.5em;
+}
+.line-desafio{
+  border-top: 1px solid #c2c2c2;
+  padding-top: 1em;
+}
+#lista-desafios{
+  max-height: 18em;
+  overflow-y: auto;
+}
+div.card-perfil div.adc-image{
+  margin: .7em;
+  margin-bottom: 1em;
+}
+div.card-perfil div.adc-image label{
+  color: #0688bb;
+  text-decoration: underline;
+}
+div.card-perfil input:hover , div.card-perfil div.adc-image label:hover , div.card-perfil div.adc-image:hover{
+  cursor: pointer;
+}
+a.btn-padrao-1-outline{
+  border: 1px solid;
+  width: 100%;
+  padding: .3em;
+  color: #018c84 !important;
+  font-size: 1.2em !important;
+  margin-top: 0.5em;
+  margin-bottom: .5em;
+}
+a.btn-padrao-1{
+  border: 1px solid;
+  width: 100%;
+  color: #fff !important;
+  background: #3c9bc0 !important;
+  font-size: 1.2em !important;
+  margin-top: 0.5em;
+  margin-bottom: .5em;
+  padding-top: .7em;
+  padding-bottom: .7em;
+  border: solid 1px #000;
+}
+
+div.card-avatar>img{
+  transform: scale(1.05);
+}
+.card-title.titulo{
+  padding: .3em;
+}
+/* .logo{
+  position: relative;
+  top: 2em;
+} */
+a.brand-logo{
+  display: table-row;
+}
+.badge-icons{
+  width: 12em;
+  margin-bottom: 2em;
+}
+.assiduidade{
+  color: #13558f;
+  font-weight: bold;
+}
+.header-prefeit{
+  position: relative;
+  width: 100%;
+  background: #eeeeee;
+  z-index: 1;
+  display: inline-flex;
+  text-align: right;
+  border-bottom: 1px solid #ddd;
+}
+.header-prefeit img{
+  width: 33px;
+  margin-left: .5em;
+  position: relative;
+  top: -.2em;
+}
+.header-prefeit li{
+  padding: .5em;
+}
+.header-prefeit li a{
+  color: #555;
+  font-weight: bold;
+}
+.header-prefeit .prefeit-info{
+  /* margin-left: 45%; */
+  margin: 0 auto;
+}
+
+
+
+#header-fortaleza {
+  display: contents;
+  width: 100%;
+  height: 32px;
+  position: absolute;
+  top: 0;
+  background: #EEEEEE;
+  font-family: Arial, Helvetica, "Sans Serif";
+}
+
+#header-fortaleza .c-hamburger {
+display: none;
+}
+
+#header-fortaleza nav ul {
+display:flex;
+}
+
+@media(max-width: 768px) {
+/*     #header-fortaleza nav{ */
+/*         display:none; */
+/*     } */
+
+#header-fortaleza nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1007;
+}
+
+#header-fortaleza nav ul {
+    width: 100%;
+    text-align: right;
+    background: #EEE;
+    margin-top: 32px !important;
+    border-top: 3px solid #ccc;
+}
+
+#header-fortaleza nav ul li {
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+}
+
+#header-fortaleza nav ul li a {
+  padding: 10px 10px 10px 60% !important;
+}
+
+#header-fortaleza .c-hamburger {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+  font-size: 0;
+  text-indent: -9999px;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+  float: right;
+  border: 1px solid #ccc;
+  background: transparent;
+}
+
+#header-fortaleza .c-hamburger:focus {
+  outline: none;
+}
+
+#header-fortaleza .c-hamburger span {
+    display: block;
+    position: absolute;
+    top: 14px;
+    left: 4px;
+    right: 4px;
+    height: 4px;
+    background: #555;
+}
+
+#header-fortaleza .c-hamburger span::before,
+#header-fortaleza .c-hamburger span::after {
+    position: absolute;
+    display: block;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #555;
+    content: "";
+}
+
+#header-fortaleza .c-hamburger span::before {
+  top: -10px;
+}
+
+#header-fortaleza .c-hamburger span::after {
+  bottom: -10px;
+}
+
+#header-fortaleza .c-hamburger--rot span {
+  transition: transform 0.3s;
+}
+
+#header-fortaleza .c-hamburger--rot.is-active span {
+  transform: rotate(90deg);
+}
+
+#header-fortaleza nav ul.mobile-hide {
+  display: none;
+}
+
+#header-fortaleza nav ul.mobile-show {
+  display: block;
+}
+}
+.navigation-header-fortaleza{
+  background: transparent !important;
+  height: auto;
+}
+#header-fortaleza .header-fortaleza-container {
+  width: 100%;
+  /* max-width: 1200px; */
+  height: 32px;
+  margin: 0 auto;
+}
+
+#header-fortaleza nav ul {
+  text-align: right;
+  padding: 0;
+  margin: 0;
+}
+
+#header-fortaleza nav ul li {
+  display: inline-block;
+}
+
+#header-fortaleza nav ul li a,
+#header-fortaleza .acesso-informacao {
+  font-size: 12px;
+  color: #555;
+  font-weight: bold;
+  line-height: 32px;
+  padding: 0 12px;
+}
+
+#header-fortaleza .acesso-informacao {
+  float: left;
+}
+
+#header-fortaleza .logo-fortaleza {
+  float: left;
+  display: block;
+  margin: 4px;
+}
+
+.navigation-header-fortaleza .align-center{
+  margin: 0 auto;
+}
+.mobile-hide[menu="open"]{
+  display: grid !important;
+  background: #f5f5f5 !important;
+}
+#modal-check-desafio.open{
+  top:  0% !important;
+  display: table !important; 
+}
+nav ul table.desafios a.display-content {
+  display: content !important;
+}
+.titulo-mobile{
+  position: absolute;
+  padding-top: 5px;
+  display: none;
+  top: 0px;
+  left: 40px;
+}
+
+.perfil a p{
+  line-height: 20px !important;
+}
